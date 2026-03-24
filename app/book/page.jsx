@@ -30,7 +30,7 @@ const adminSlots = {
 
 function formatPeso(value) {
   const num = Number(value || 0);
-  return ₱${num.toLocaleString()};
+  return "₱" + num.toLocaleString();
 }
 
 export default function BookPage() {
