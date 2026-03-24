@@ -113,9 +113,18 @@ export default function BookPage() {
     if (!canConfirmBooking) return;
 
     alert(
-      Booking request submitted.\n\nClient: ${client.fullName}\nService: ${service}\nArtist: ${artist}\nDate: ${date}\nTime: ${timeSlot}\nQuotation: ${formatPeso(quotationAmount)}\nDeposit: ${formatPeso(depositAmount)}\n\nAdmin can now review and confirm this booking.
-    );
-  }
+  `Booking request submitted.
+
+Client: ${client.fullName}
+Service: ${service}
+Artist: ${artist}
+Date: ${date}
+Time: ${timeSlot}
+Quotation: ${formatPeso(quotationAmount)}
+Deposit: ${formatPeso(depositAmount)}
+
+Admin can now review and confirm this booking.`
+);
 
   return (
     <main
